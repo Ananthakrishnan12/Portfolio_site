@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sasmitha's - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="images\favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    .skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-badge {
+  background: #6c63ff;   /* Purple shade */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;   /* Makes pill shape */
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-badge:hover {
+  background: #4b42d1;   /* Darker purple on hover */
+  transform: scale(1.05);
+}
+
+.tools-grid {
+  margin-top: 30px;
+}
+
+.tool-card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.tool-card img {
+  max-width: 120px;
+  height: auto;
+}
+
+.tool-card:hover {
+  border-color: #6c63ff;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.2);
+}
+
+
+.col-lg-5 {
+  height: 250px; /* set fixed height */
+  overflow: hidden;
+}
+
+.col-lg-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .finisher-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#hero .hero-content {
+  position: relative;
+  z-index: 1; /* keep text above animation */
+  color: white;
+}
+
+
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Hello Everyone !!</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+  <!-- Animated Header Background -->
+  <div class="finisher-header" style="width: 100%; height: 100vh;"></div>
+
+  <!-- Hero Content -->
+  <div class="container d-flex flex-column align-items-center justify-content-center text-center hero-content" data-aos="fade-up" data-aos-delay="100">
+    <h2>I am Sasmitha</h2>
+    <p><span class="typed" data-typed-items="SEO Analyst, Digital Marketer"></span></p>
+  </div>
+
+</section>
+<!-- /Hero Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="images\Photo.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Sasmitha K</span></p>
+                <p><strong>Profile: </strong> <span>SEO Analyst</span></p>
+                <p><strong>Email: </strong> <span>ksasmitha48@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>8056820118</span></p>
+                <p><strong>Location: </strong> <span>Chennai</span></p>
+              </div>
+            </div>
+
+            <!-- <div class="skills-content skills-animation">
+            </div> -->
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+Results-driven SEO Analyst with one year of practical experience in developing and executing impactful SEO strategies, content marketing plans, social media optimization, and paid ad campaigns. Skilled in leveraging Google Ads, Meta Ads, and Canva to create engaging visuals. Known for improving website rankings, driving organic traffic, and managing high-converting paid campaigns aligned with business objectives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Sasmitha K</h4>
+              <p><em>Boosted rankings for 25+ high-volume keywords, ran Google & Meta Ads campaigns with improved CTR and lower CPC. Created designs in Canva, optimized GMB for local SEO, and tracked campaign performance using analytics tools.</em></p>
+              <ul>
+                <li>Chennai</li>
+                <li>8056820118</li>
+                <li>ksasmitha48@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Commerce; Computer Applications</h4>
+              <h5>2021 - 2024</h5>
+              <p><em>Ardamom Planter's Associates College, Bodinayakanur</em></p>
+              <p><em>Madurai Kamaraj University</em></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>SEO Analyst – Technest Technologies</h4>
+              <h5>Aug 2024 – Sep 2025</h5>
+              <p><em>Chennai</em></p>
+              <ul>
+                <li>Boosted keyword rankings for 25+ high-volume keywords through strategic on-page and off-page efforts.</li>
+                <li>Created and managed Google Ads campaigns that increased CTR and reduced CPC.</li>
+                <li>Set up Meta Ads campaigns focused on reach, engagement, and lead generation.</li>
+                <li>Designed promotional and social creatives in Canva for various digital campaigns.</li>
+                <li>Maintained GMB profiles, improved local SEO visibility, and tracked performance via analytics tools.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h5>Green's Technology -- Digital Marketing course 2024</h5>
+              <h5>Sundar Digital Marketer -  Google ads --2025</h5>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+<!-- ======= Key Competencies Section ======= -->
+<section id="skills" class="skills-mf pt-5 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Key Competencies</h3>
+          <p class="subtitle-a">Core areas of expertise in SEO & Digital Marketing</p>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <div class="skills-badges">
+          <span class="skill-badge">Keyword Research</span>
+          <span class="skill-badge">Campaign Management</span>
+          <span class="skill-badge">Google Ads</span>
+          <span class="skill-badge">Meta Ads</span>
+          <span class="skill-badge">Analysis & Reporting</span>
+          <span class="skill-badge">Technical SEO</span>
+          <span class="skill-badge">Competitor Analysis</span>
+          <span class="skill-badge">Off-Page SEO</span>
+          <span class="skill-badge">Link Building</span>
+          <span class="skill-badge">On-Page SEO</span>
+          <span class="skill-badge">Social Media Strategy</span>
+          <span class="skill-badge">Canva (Post & Ad Creatives)</span>
+          <span class="skill-badge">SMO – Strategy & Post Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Key Competencies Section -->
+
+<!--Digital Marketing Tool section-->
+<!-- ======= Digital Marketing & SEO Tools Section ======= -->
+<section id="tools" class="tools-mf pt-5 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Digital Marketing & SEO Tools</h3>
+          <p class="subtitle-a">The platforms and tools I work with daily</p>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center tools-grid">
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\google_analytics-ar21.svg" alt="Google Analytics">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\Google search console.PNG" alt="Google Search Console">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\Google tag Manager.PNG" alt="Google Tag Manager">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\Google_Ads.png" alt="Google Ads">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\Moz.PNG" alt="Moz">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\wordpress.PNG" alt="WordPress">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\ahrefs.PNG" alt="Ahrefs">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\semrush.PNG" alt="SEMrush">
+        </div>
+      </div>
+      <!-- <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="assets/img/tools/photoshop.png" alt="Photoshop">
+        </div>
+      </div> -->
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\canva.PNG" alt="Canva">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\meta.PNG" alt="Meta">
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="tool-card">
+          <img src="images\Hubspot.PNG" alt="HubSpot">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Digital Marketing & SEO Tools Section -->
+<!--Ends of Tool section-->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Things I have worked as SEO Analyst</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul>End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="images\2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>1.Website I worked on - seo projects</h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="images\3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>2.Seo results achieved -case studies</h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="images\4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3.Googls ada Performance </h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="images\5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>4.Meta ads overview</h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="images\6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>5.Google map profile</h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="images\7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>6.Blog content writing </h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="images\8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>7.SMO</h4>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+<!-- 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="images\9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="images\10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>  -->
+<!-- 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>End Portfolio Item
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <!-- <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Portrait Photography</h3>
+              <h4>$160.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Fashion Photography</h3>
+              <h4>$300.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Sports Photography</h3>
+              <h4>$200.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Still Life Photography</h3>
+              <h4>$120.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Wedding Photography</h3>
+              <h4>$500.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Photojournalism</h3>
+              <h4>$200.00</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!-- Faq Section -->
+    <!-- <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>End Faq item -->
+
+              <!-- <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>End Faq item -->
+
+              <!-- <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>End Faq item -->
+<!-- 
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section> --> 
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>End testimonial item -->
+
+          <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>   -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Chennai</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>8056820118</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>ksasmitha48@gmail.com </p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p><span>Connect with me</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sasmitha-k-344400282/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://www.linkedin.com/in/reshma-mahilam/">Reshma</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- ✅ FinisherHeader Script (must be after DOM loads) -->
+<script src="assets/js/finisher-header.es5.min.js"></script>
+<script>
+  window.onload = function() {
+    new FinisherHeader({
+      "count": 100,
+      "size": { "min": 2, "max": 8, "pulse": 0 },
+      "speed": {
+        "x": { "min": 0, "max": 0.4 },
+        "y": { "min": 0, "max": 0.6 }
+      },
+      "colors": {
+        "background": "#201e30",
+        "particles": [ "#fbfcca", "#d7f3fe", "#ffd0a7" ]
+      },
+      "blending": "overlay",
+      "opacity": { "center": 1, "edge": 0 },
+      "skew": -2,
+      "shapes": [ "c" ]
+    });
+  }
+</script>
+
+</body>
+
+</html>
