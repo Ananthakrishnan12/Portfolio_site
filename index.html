@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sasmitha's - Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sasmitha's - Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="images\favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="images\favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: DevFolio
   * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
@@ -35,369 +46,573 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <style>
-    .skills-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
+    <style>
+      #hero h2,
+      #hero .typed {
+        color: #ffffff !important;
+      }
 
-.skill-badge {
-  background: #6c63ff;   /* Purple shade */
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;   /* Makes pill shape */
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
+      .typed-cursor {
+        color: #ffffff !important;
+      }
 
-.skill-badge:hover {
-  background: #4b42d1;   /* Darker purple on hover */
-  transform: scale(1.05);
-}
+      .skills-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
-.tools-grid {
-  margin-top: 30px;
-}
+      .skill-badge {
+        background: #6c63ff; /* Purple shade */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 30px; /* Makes pill shape */
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+      }
 
-.tool-card {
-  background: #fff;
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
-  transition: all 0.3s ease-in-out;
-}
+      .skill-badge:hover {
+        background: #4b42d1; /* Darker purple on hover */
+        transform: scale(1.05);
+      }
 
-.tool-card img {
-  max-width: 120px;
-  height: auto;
-}
+      .tools-grid {
+        margin-top: 30px;
+      }
 
-.tool-card:hover {
-  border-color: #6c63ff;
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.2);
-}
+      .tool-card {
+        background: #fff;
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        padding: 15px;
+        margin: 15px 0;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease-in-out;
+      }
 
+      .tool-card img {
+        max-width: 120px;
+        height: auto;
+      }
 
-.col-lg-5 {
-  height: 250px; /* set fixed height */
-  overflow: hidden;
-}
+      .tool-card:hover {
+        border-color: #6c63ff;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.2);
+      }
 
-.col-lg-5 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+      .col-lg-5 {
+        height: 250px; /* set fixed height */
+        overflow: hidden;
+      }
 
+      .col-lg-5 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-#hero {
-  position: relative;
-  overflow: hidden;
-}
+      /*#hero {
+        position: relative;
+        overflow: hidden;
+      }
 
-#hero .finisher-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+      #hero .finisher-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+
+      #hero .hero-content {
+        position: relative;
+        z-index: 1; /* keep text above animation 
+        color: white;
+      } */
+
+      #hero .hero-content {
+  text-align: center;
 }
 
 #hero .hero-content {
-  position: relative;
-  z-index: 1; /* keep text above animation */
-  color: white;
+  transform: translateY(-75vh);
 }
 
+      body {
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+  }
 
-  </style>
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-45deg);
+  }
 
-</head>
+  .star {
+    --star-color: white;
+    --star-tail-length: 6em;
+    --star-tail-height: 2px;
+    --star-width: calc(var(--star-tail-length) / 6);
+    --fall-duration: 9s;
+    --tail-fade-duration: var(--fall-duration);
+    position: absolute;
+    top: var(--top-offset);
+    left: 0;
+    width: var(--star-tail-length);
+    height: var(--star-tail-height);
+    color: var(--star-color);
+    background: linear-gradient(45deg, currentColor, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px currentColor);
+    transform: translate3d(104em, 0, 0);
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
+      tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+  }
 
-<body class="index-page">
+  @media screen and (max-width: 750px) {
+    .star {
+      animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+    }
+  }
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  .star:nth-child(1) { --star-tail-length: 5.75em; --top-offset: 7.73vh; --fall-duration: 9.3s; --fall-delay: 2.2s; }
+  .star:nth-child(2) { --star-tail-length: 6.88em; --top-offset: 4.86vh; --fall-duration: 10.2s; --fall-delay: 9.3s; }
+  .star:nth-child(3) { --star-tail-length: 6.84em; --top-offset: 45.41vh; --fall-duration: 10.7s; --fall-delay: 6.1s; }
+  .star:nth-child(4) { --star-tail-length: 7.15em; --top-offset: 78.47vh; --fall-duration: 10.4s; --fall-delay: 5.8s; }
+  .star:nth-child(5) { --star-tail-length: 6.32em; --top-offset: 71.49vh; --fall-duration: 11.2s; --fall-delay: 3.4s; }
+  .star:nth-child(6) { --star-tail-length: 7.02em; --top-offset: 58.74vh; --fall-duration: 9.3s; --fall-delay: 2.7s; }
+  .star:nth-child(7) { --star-tail-length: 6.66em; --top-offset: 14.88vh; --fall-duration: 10.6s; --fall-delay: 9.4s; }
+  .star:nth-child(8) { --star-tail-length: 6.78em; --top-offset: 92.51vh; --fall-duration: 10.6s; --fall-delay: 9.2s; }
+  .star:nth-child(9) { --star-tail-length: 6.84em; --top-offset: 12.87vh; --fall-duration: 9.5s; --fall-delay: 1.2s; }
+  .star:nth-child(10) { --star-tail-length: 5.25em; --top-offset: 35.84vh; --fall-duration: 9.9s; --fall-delay: 8.7s; }
+  .star:nth-child(11) { --star-tail-length: 5.92em; --top-offset: 77.26vh; --fall-duration: 7.5s; --fall-delay: 9.9s; }
+  .star:nth-child(12) { --star-tail-length: 5.75em; --top-offset: 26.65vh; --fall-duration: 10.4s; --fall-delay: 7.7s; }
+  .star:nth-child(13) { --star-tail-length: 6.72em; --top-offset: 67.57vh; --fall-duration: 8.3s; --fall-delay: 8.5s; }
+  .star:nth-child(14) { --star-tail-length: 5.23em; --top-offset: 45.43vh; --fall-duration: 6.2s; --fall-delay: 2.7s; }
+  .star:nth-child(15) { --star-tail-length: 7.42em; --top-offset: 24.16vh; --fall-duration: 8.7s; --fall-delay: 4.5s; }
+  .star:nth-child(16) { --star-tail-length: 5.22em; --top-offset: 68.32vh; --fall-duration: 10.1s; --fall-delay: 5.3s; }
+  .star:nth-child(17) { --star-tail-length: 7.37em; --top-offset: 27.6vh; --fall-duration: 8.1s; --fall-delay: 6.8s; }
+  .star:nth-child(18) { --star-tail-length: 6.64em; --top-offset: 85.34vh; --fall-duration: 6.4s; --fall-delay: 4.8s; }
+  .star:nth-child(19) { --star-tail-length: 6.47em; --top-offset: 86.07vh; --fall-duration: 10.4s; --fall-delay: 7.5s; }
+  .star:nth-child(20) { --star-tail-length: 5.67em; --top-offset: 47.96vh; --fall-duration: 8.6s; --fall-delay: 6.5s; }
+  .star:nth-child(21) { --star-tail-length: 7.45em; --top-offset: 93.36vh; --fall-duration: 8.1s; --fall-delay: 7.5s; }
+  .star:nth-child(22) { --star-tail-length: 5.17em; --top-offset: 56.63vh; --fall-duration: 9.3s; --fall-delay: 5.1s; }
+  .star:nth-child(23) { --star-tail-length: 5.86em; --top-offset: 26.65vh; --fall-duration: 6.9s; --fall-delay: 1.3s; }
+  .star:nth-child(24) { --star-tail-length: 6.04em; --top-offset: 94.61vh; --fall-duration: 6.8s; --fall-delay: 1.1s; }
+  .star:nth-child(25) { --star-tail-length: 7.18em; --top-offset: 78.49vh; --fall-duration: 6.9s; --fall-delay: 9.3s; }
+  .star:nth-child(26) { --star-tail-length: 5.4em; --top-offset: 68.27vh; --fall-duration: 10.8s; --fall-delay: 2.1s; }
+  .star:nth-child(27) { --star-tail-length: 5.94em; --top-offset: 58.07vh; --fall-duration: 10.5s; --fall-delay: 9.9s; }
+  .star:nth-child(28) { --star-tail-length: 6.63em; --top-offset: 73.16vh; --fall-duration: 8.1s; --fall-delay: 4.8s; }
+  .star:nth-child(29) { --star-tail-length: 6.47em; --top-offset: 14.54vh; --fall-duration: 8.2s; --fall-delay: 7.6s; }
+  .star:nth-child(30) { --star-tail-length: 5.76em; --top-offset: 96.6vh; --fall-duration: 7.4s; --fall-delay: 6.6s; }
+  .star:nth-child(31) { --star-tail-length: 6.92em; --top-offset: 73.01vh; --fall-duration: 11.7s; --fall-delay: 2.5s; }
+  .star:nth-child(32) { --star-tail-length: 6.09em; --top-offset: 77.56vh; --fall-duration: 10.1s; --fall-delay: 1.8s; }
+  .star:nth-child(33) { --star-tail-length: 6.55em; --top-offset: 10.16vh; --fall-duration: 7.9s; --fall-delay: 4.7s; }
+  .star:nth-child(34) { --star-tail-length: 7.23em; --top-offset: 67.89vh; --fall-duration: 9.3s; --fall-delay: 8.3s; }
+  .star:nth-child(35) { --star-tail-length: 5.92em; --top-offset: 36.14vh; --fall-duration: 10.5s; --fall-delay: 1.5s; }
+  .star:nth-child(36) { --star-tail-length: 7.37em; --top-offset: 66.82vh; --fall-duration: 11.4s; --fall-delay: 8.4s; }
+  .star:nth-child(37) { --star-tail-length: 7.45em; --top-offset: 16.4vh; --fall-duration: 7.3s; --fall-delay: 1.2s; }
+  .star:nth-child(38) { --star-tail-length: 5.48em; --top-offset: 54.4vh; --fall-duration: 9.9s; --fall-delay: 4.1s; }
+  .star:nth-child(39) { --star-tail-length: 5.86em; --top-offset: 54.21vh; --fall-duration: 11.2s; --fall-delay: 1s; }
+  .star:nth-child(40) { --star-tail-length: 7.04em; --top-offset: 24.51vh; --fall-duration: 8.4s; --fall-delay: 6.8s; }
+  .star:nth-child(41) { --star-tail-length: 6.92em; --top-offset: 92.29vh; --fall-duration: 6.7s; --fall-delay: 1.8s; }
+  .star:nth-child(42) { --star-tail-length: 5.86em; --top-offset: 35.53vh; --fall-duration: 7.7s; --fall-delay: 2.1s; }
+  .star:nth-child(43) { --star-tail-length: 6.92em; --top-offset: 94.88vh; --fall-duration: 7.6s; --fall-delay: 5.8s; }
+  .star:nth-child(44) { --star-tail-length: 7.35em; --top-offset: 10.97vh; --fall-duration: 10.6s; --fall-delay: 3.4s; }
+  .star:nth-child(45) { --star-tail-length: 7.21em; --top-offset: 84.45vh; --fall-duration: 11.4s; --fall-delay: 7s; }
+  .star:nth-child(46) { --star-tail-length: 7.45em; --top-offset: 31.78vh; --fall-duration: 11.2s; --fall-delay: 1.4s; }
+  .star:nth-child(47) { --star-tail-length: 7.42em; --top-offset: 25.13vh; --fall-duration: 11.2s; --fall-delay: 8.6s; }
+  .star:nth-child(48) { --star-tail-length: 7.02em; --top-offset: 16.59vh; --fall-duration: 8.4s; --fall-delay: 4.8s; }
+  .star:nth-child(49) { --star-tail-length: 5.17em; --top-offset: 86.84vh; --fall-duration: 10.8s; --fall-delay: 2.3s; }
+  .star:nth-child(50) { --star-tail-length: 5.37em; --top-offset: 29.83vh; --fall-duration: 7.1s; --fall-delay: 2.7s; }
+  
+  .star::before,
+  .star::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: calc(var(--star-width) / -2);
+    width: var(--star-width);
+    height: 100%;
+    background: linear-gradient(45deg, transparent, currentColor, transparent);
+    border-radius: inherit;
+    animation: blink 2s linear infinite;
+  }
+  
+  .star::before {
+    transform: rotate(45deg);
+  }
+  
+  .star::after {
+    transform: rotate(-45deg);
+  }
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Hello Everyone !!</h1>
-      </a>
+  @keyframes fall {
+    to {
+      transform: translate3d(-30em, 0, 0);
+    }
+  }
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  @keyframes tail-fade {
+    0%, 50% {
+      width: var(--star-tail-length);
+      opacity: 1;
+    }
 
-    </div>
-  </header>
+    70%, 80% {
+      width: 0;
+      opacity: 0.4;
+    }
 
-  <main class="main">
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
 
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
+    </style>
+  </head>
 
-  <!-- Animated Header Background -->
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Hello Everyone !!</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="#hero" class="active">Home<br /></a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+<section id="hero" class="hero section dark-background d-flex flex-column align-items-center justify-content-center">
+
   <div class="finisher-header" style="width: 100%; height: 100vh;"></div>
 
-  <!-- Hero Content -->
-  <div class="container d-flex flex-column align-items-center justify-content-center text-center hero-content" data-aos="fade-up" data-aos-delay="100">
+  <div class="stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+
+  <div class="container text-center hero-content" data-aos="fade-up" data-aos-delay="100">
     <h2>I am Sasmitha</h2>
     <p><span class="typed" data-typed-items="SEO Analyst, Digital Marketer"></span></p>
   </div>
 
 </section>
-<!-- /Hero Section -->
+      <!-- Hero Section -->
 
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="images\Photo.jpeg" class="img-fluid" alt="">
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="row justify-content-between gy-4">
+                <div class="col-lg-5">
+                  <img src="images\Photo.jpeg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-lg-7 about-info">
+                  <p><strong>Name: </strong> <span>Sasmitha K</span></p>
+                  <p><strong>Profile: </strong> <span>SEO Analyst</span></p>
+                  <p>
+                    <strong>Email: </strong> <span>ksasmitha48@gmail.com</span>
+                  </p>
+                  <p><strong>Phone: </strong> <span>8056820118</span></p>
+                  <p><strong>Location: </strong> <span>Chennai</span></p>
+                </div>
               </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>Sasmitha K</span></p>
-                <p><strong>Profile: </strong> <span>SEO Analyst</span></p>
-                <p><strong>Email: </strong> <span>ksasmitha48@gmail.com</span></p>
-                <p><strong>Phone: </strong> <span>8056820118</span></p>
-                <p><strong>Location: </strong> <span>Chennai</span></p>
-              </div>
-            </div>
 
-            <!-- <div class="skills-content skills-animation">
+              <!-- <div class="skills-content skills-animation">
             </div> -->
-          </div>
+            </div>
 
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>About me</h4>
-              <p>
-Results-driven SEO Analyst with one year of practical experience in developing and executing impactful SEO strategies, content marketing plans, social media optimization, and paid ad campaigns. Skilled in leveraging Google Ads, Meta Ads, and Canva to create engaging visuals. Known for improving website rankings, driving organic traffic, and managing high-converting paid campaigns aligned with business objectives.
-              </p>
+            <div class="col-md-6">
+              <div class="about-me">
+                <h4>About me</h4>
+                <p>
+                  Results-driven SEO Analyst with one year of practical
+                  experience in developing and executing impactful SEO
+                  strategies, content marketing plans, social media
+                  optimization, and paid ad campaigns. Skilled in leveraging
+                  Google Ads, Meta Ads, and Canva to create engaging visuals.
+                  Known for improving website rankings, driving organic traffic,
+                  and managing high-converting paid campaigns aligned with
+                  business objectives.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /About Section -->
 
-      </div>
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+        </div>
+        <!-- End Section Title -->
 
-    </section><!-- /About Section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Sumary</h3>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+              <div class="resume-item pb-0">
+                <h4>Sasmitha K</h4>
+                <p>
+                  <em
+                    >Boosted rankings for 25+ high-volume keywords, ran Google &
+                    Meta Ads campaigns with improved CTR and lower CPC. Created
+                    designs in Canva, optimized GMB for local SEO, and tracked
+                    campaign performance using analytics tools.</em
+                  >
+                </p>
+                <ul>
+                  <li>Chennai</li>
+                  <li>8056820118</li>
+                  <li>ksasmitha48@gmail.com</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-      </div><!-- End Section Title -->
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Commerce; Computer Applications</h4>
+                <h5>2021 - 2024</h5>
+                <p>
+                  <em>Cardamom Planter's Associates College, Bodinayakanur</em>
+                </p>
+                <p><em>Madurai Kamaraj University</em></p>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
 
-      <div class="container">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>SEO Analyst – Technest Technologies</h4>
+                <h5>Aug 2024 – Sep 2025</h5>
+                <p><em>Chennai</em></p>
+                <ul>
+                  <li>
+                    Boosted keyword rankings for 25+ high-volume keywords
+                    through strategic on-page and off-page efforts.
+                  </li>
+                  <li>
+                    Created and managed Google Ads campaigns that increased CTR
+                    and reduced CPC.
+                  </li>
+                  <li>
+                    Set up Meta Ads campaigns focused on reach, engagement, and
+                    lead generation.
+                  </li>
+                  <li>
+                    Designed promotional and social creatives in Canva for
+                    various digital campaigns.
+                  </li>
+                  <li>
+                    Maintained GMB profiles, improved local SEO visibility, and
+                    tracked performance via analytics tools.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
 
-        <div class="row">
+              <h3 class="resume-title">Certifications</h3>
+              <div class="resume-item">
+                <h5>Green's Technology -- Digital Marketing course 2024</h5>
+                <h5>Sundar Digital Marketer - Google ads --2025</h5>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Sasmitha K</h4>
-              <p><em>Boosted rankings for 25+ high-volume keywords, ran Google & Meta Ads campaigns with improved CTR and lower CPC. Created designs in Canva, optimized GMB for local SEO, and tracked campaign performance using analytics tools.</em></p>
-              <ul>
-                <li>Chennai</li>
-                <li>8056820118</li>
-                <li>ksasmitha48@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Commerce; Computer Applications</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>Ardamom Planter's Associates College, Bodinayakanur</em></p>
-              <p><em>Madurai Kamaraj University</em></p>
-            </div><!-- Edn Resume Item -->
-
+      <!-- ======= Key Competencies Section ======= -->
+      <section id="skills" class="skills-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Key Competencies</h3>
+                <p class="subtitle-a">
+                  Core areas of expertise in SEO & Digital Marketing
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>SEO Analyst – Technest Technologies</h4>
-              <h5>Aug 2024 – Sep 2025</h5>
-              <p><em>Chennai</em></p>
-              <ul>
-                <li>Boosted keyword rankings for 25+ high-volume keywords through strategic on-page and off-page efforts.</li>
-                <li>Created and managed Google Ads campaigns that increased CTR and reduced CPC.</li>
-                <li>Set up Meta Ads campaigns focused on reach, engagement, and lead generation.</li>
-                <li>Designed promotional and social creatives in Canva for various digital campaigns.</li>
-                <li>Maintained GMB profiles, improved local SEO visibility, and tracked performance via analytics tools.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+              <div class="skills-badges">
+                <span class="skill-badge">Keyword Research</span>
+                <span class="skill-badge">Campaign Management</span>
+                <span class="skill-badge">Google Ads</span>
+                <span class="skill-badge">Meta Ads</span>
+                <span class="skill-badge">Analysis & Reporting</span>
+                <span class="skill-badge">Technical SEO</span>
+                <span class="skill-badge">Competitor Analysis</span>
+                <span class="skill-badge">Off-Page SEO</span>
+                <span class="skill-badge">Link Building</span>
+                <span class="skill-badge">On-Page SEO</span>
+                <span class="skill-badge">Social Media Strategy</span>
+                <span class="skill-badge">Canva (Post & Ad Creatives)</span>
+                <span class="skill-badge"
+                  >SMO – Strategy & Post Management</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Key Competencies Section -->
 
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h5>Green's Technology -- Digital Marketing course 2024</h5>
-              <h5>Sundar Digital Marketer -  Google ads --2025</h5>
-            </div><!-- Edn Resume Item -->
-
+      <!--Digital Marketing Tool section-->
+      <!-- ======= Digital Marketing & SEO Tools Section ======= -->
+      <section id="tools" class="tools-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Digital Marketing & SEO Tools</h3>
+                <p class="subtitle-a">
+                  The platforms and tools I work with daily
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
           </div>
 
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-<!-- ======= Key Competencies Section ======= -->
-<section id="skills" class="skills-mf pt-5 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="title-box text-center">
-          <h3 class="title-a">Key Competencies</h3>
-          <p class="subtitle-a">Core areas of expertise in SEO & Digital Marketing</p>
-          <div class="line-mf"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-10 text-center">
-        <div class="skills-badges">
-          <span class="skill-badge">Keyword Research</span>
-          <span class="skill-badge">Campaign Management</span>
-          <span class="skill-badge">Google Ads</span>
-          <span class="skill-badge">Meta Ads</span>
-          <span class="skill-badge">Analysis & Reporting</span>
-          <span class="skill-badge">Technical SEO</span>
-          <span class="skill-badge">Competitor Analysis</span>
-          <span class="skill-badge">Off-Page SEO</span>
-          <span class="skill-badge">Link Building</span>
-          <span class="skill-badge">On-Page SEO</span>
-          <span class="skill-badge">Social Media Strategy</span>
-          <span class="skill-badge">Canva (Post & Ad Creatives)</span>
-          <span class="skill-badge">SMO – Strategy & Post Management</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Key Competencies Section -->
-
-<!--Digital Marketing Tool section-->
-<!-- ======= Digital Marketing & SEO Tools Section ======= -->
-<section id="tools" class="tools-mf pt-5 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="title-box text-center">
-          <h3 class="title-a">Digital Marketing & SEO Tools</h3>
-          <p class="subtitle-a">The platforms and tools I work with daily</p>
-          <div class="line-mf"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center tools-grid">
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\google_analytics-ar21.svg" alt="Google Analytics">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\Google search console.PNG" alt="Google Search Console">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\Google tag Manager.PNG" alt="Google Tag Manager">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\Google_Ads.png" alt="Google Ads">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\Moz.PNG" alt="Moz">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\wordpress.PNG" alt="WordPress">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\ahrefs.PNG" alt="Ahrefs">
-        </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\semrush.PNG" alt="SEMrush">
-        </div>
-      </div>
-      <!-- <div class="col-6 col-md-3 text-center">
+          <div class="row justify-content-center tools-grid">
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img
+                  src="images\google_analytics-ar21.svg"
+                  alt="Google Analytics"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img
+                  src="images\Google search console.PNG"
+                  alt="Google Search Console"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img
+                  src="images\Google tag Manager.PNG"
+                  alt="Google Tag Manager"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\Google_Ads.png" alt="Google Ads" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\Moz.PNG" alt="Moz" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\wordpress.PNG" alt="WordPress" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\ahrefs.PNG" alt="Ahrefs" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\semrush.PNG" alt="SEMrush" />
+              </div>
+            </div>
+            <!-- <div class="col-6 col-md-3 text-center">
         <div class="tool-card">
           <img src="assets/img/tools/photoshop.png" alt="Photoshop">
         </div>
       </div> -->
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\canva.PNG" alt="Canva">
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\canva.PNG" alt="Canva" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\meta.PNG" alt="Meta" />
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="tool-card">
+                <img src="images\Hubspot.PNG" alt="HubSpot" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\meta.PNG" alt="Meta">
+      </section>
+      <!-- End Digital Marketing & SEO Tools Section -->
+      <!--Ends of Tool section-->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+          <p>Things I have worked as SEO Analyst</p>
         </div>
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <div class="tool-card">
-          <img src="images\Hubspot.PNG" alt="HubSpot">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Digital Marketing & SEO Tools Section -->
-<!--Ends of Tool section-->
+        <!-- End Section Title -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Things I have worked as SEO Analyst</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Product</li>
@@ -405,80 +620,179 @@ Results-driven SEO Analyst with one year of practical experience in developing a
             <li data-filter=".filter-books">Books</li>
           </ul>End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="images\2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>1.Website I worked on - seo projects</h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img src="images\2.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>1.Website I worked on - seo projects</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/app-1.jpg"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="images\3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>2.Seo results achieved -case studies</h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img src="images\3.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>2.Seo results achieved -case studies</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/product-1.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="images\4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>3.Googls ada Performance </h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+              >
+                <img src="images\4.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>3.Googls ada Performance</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/books-1.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="images\5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>4.Meta ads overview</h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img src="images\5.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>4.Meta ads overview</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/app-2.jpg"
+                    title="App 2"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="images\6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>5.Google map profile</h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img src="images\6.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>5.Google map profile</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/product-2.jpg"
+                    title="Product 2"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="images\7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>6.Blog content writing </h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img src="images\7.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>6.Blog content writing</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/branding-2.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="images\8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>7.SMO</h4>
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+              >
+                <img src="images\8.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>7.SMO</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a
+                    href="assets/img/portfolio/books-2.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-<!-- 
+              <!-- End Portfolio Item -->
+              <!-- 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="images\9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -489,7 +803,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="images\10.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
@@ -498,7 +812,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>  -->
-<!-- 
+              <!-- 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -518,17 +832,15 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
         </div>
+      </section>
+      <!-- /Portfolio Section -->
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Pricing Section -->
-    <!-- <section id="pricing" class="pricing section">
+      <!-- Pricing Section -->
+      <!-- <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
       <!-- <div class="container section-title" data-aos="fade-up">
@@ -588,8 +900,8 @@ Results-driven SEO Analyst with one year of practical experience in developing a
 
     </section> -->
 
-    <!-- Faq Section -->
-    <!-- <section id="faq" class="faq section">
+      <!-- Faq Section -->
+      <!-- <section id="faq" class="faq section">
 
       <div class="container">
 
@@ -615,7 +927,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-              <!-- <div class="faq-item">
+      <!-- <div class="faq-item">
                 <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
@@ -623,7 +935,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-              <!-- <div class="faq-item">
+      <!-- <div class="faq-item">
                 <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
                 <div class="faq-content">
                   <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
@@ -631,7 +943,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>End Faq item -->
 
-              <!-- <div class="faq-item">
+      <!-- <div class="faq-item">
                 <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
@@ -639,14 +951,14 @@ Results-driven SEO Analyst with one year of practical experience in developing a
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>End Faq item -->
 
-              <!-- <div class="faq-item">
+      <!-- <div class="faq-item">
                 <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
                 <div class="faq-content">
                   <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>End Faq item -->
-<!-- 
+      <!-- 
             </div>
 
           </div>
@@ -654,10 +966,10 @@ Results-driven SEO Analyst with one year of practical experience in developing a
 
       </div>
 
-    </section> --> 
+    </section> -->
 
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section accent-background">
+      <!-- Testimonials Section -->
+      <!-- <section id="testimonials" class="testimonials section accent-background">
 
       <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
@@ -697,7 +1009,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div><!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
@@ -713,7 +1025,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div><!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
@@ -729,7 +1041,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div><!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
@@ -745,7 +1057,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div>End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
@@ -761,7 +1073,7 @@ Results-driven SEO Analyst with one year of practical experience in developing a
               </div>
             </div>End testimonial item -->
 
-          <!-- </div>
+      <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
@@ -769,54 +1081,54 @@ Results-driven SEO Analyst with one year of practical experience in developing a
 
     </section>   -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Chennai</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>8056820118</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>ksasmitha48@gmail.com </p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
         </div>
+        <!-- End Section Title -->
 
-        <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-5">
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Chennai</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>8056820118</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>ksasmitha48@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+            </div>
+          </div>
+
+          <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -845,82 +1157,82 @@ Results-driven SEO Analyst with one year of practical experience in developing a
 
           </div>
         </form>End Contact Form -->
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p><span>Connect with me</span></p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sasmitha-k-344400282/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by
+          <a href="https://www.linkedin.com/in/reshma-mahilam/">Reshma</a>
+        </div>
       </div>
+    </footer>
 
-    </section><!-- /Contact Section -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </main>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <footer id="footer" class="footer accent-background">
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p><span>Connect with me</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="#"><i class="bi bi-twitter-x"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/sasmitha-k-344400282/"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://www.linkedin.com/in/reshma-mahilam/">Reshma</a>
-      </div>
-    </div>
+    Main JS File
+    <script src="assets/js/main.js"></script>
 
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- ✅ FinisherHeader Script (must be after DOM loads) -->
-<script src="assets/js/finisher-header.es5.min.js"></script>
-<script>
-  window.onload = function() {
-    new FinisherHeader({
-      "count": 100,
-      "size": { "min": 2, "max": 8, "pulse": 0 },
-      "speed": {
-        "x": { "min": 0, "max": 0.4 },
-        "y": { "min": 0, "max": 0.6 }
-      },
-      "colors": {
-        "background": "#201e30",
-        "particles": [ "#fbfcca", "#d7f3fe", "#ffd0a7" ]
-      },
-      "blending": "overlay",
-      "opacity": { "center": 1, "edge": 0 },
-      "skew": -2,
-      "shapes": [ "c" ]
-    });
-  }
-</script>
-
-</body>
-
+    <!-- ✅ FinisherHeader Script (must be after DOM loads) -->
+    /*<script src="assets/js/finisher-header.es5.min.js"></script> 
+    <script>
+      window.onload = function () {
+        new FinisherHeader({
+          count: 100,
+          size: { min: 2, max: 8, pulse: 0 },
+          speed: {
+            x: { min: 0, max: 0.4 },
+            y: { min: 0, max: 0.6 },
+          },
+          colors: {
+            background: "#201e30",
+            particles: ["#fbfcca", "#d7f3fe", "#ffd0a7"],
+          },
+          blending: "overlay",
+          opacity: { center: 1, edge: 0 },
+          skew: -2,
+          shapes: ["c"],
+        });
+      };
+    </script> */
+  </body>
 </html>
